@@ -660,10 +660,6 @@ body {
 		flex-direction: column;
 		align-items: center;
 	}
-
-	.product-Cobrand-Cards h3 {
-		position: relative;
-	}
 	
 	.product-Card-Size {
 		width: 345px;
