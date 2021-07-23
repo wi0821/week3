@@ -83,10 +83,6 @@ body {
 	padding-bottom: 32px;
 }
 
-.pr-6 {
-	padding-right: 48px;
-}
-
 .subTitle {
 	padding-top: 60px;
 	text-align: center;
@@ -110,10 +106,6 @@ body {
 	padding :30px 88px;
 }
 
-.header-Logo  {
-	display: block;
-}
-
 .header-Logo a {
 	display: block;
 	background: url(../images/logo.png) no-repeat;
@@ -133,6 +125,10 @@ body {
 
 .header-Menu li {
 	padding-right: 64px;
+}
+
+.header-Menu li:last-child {
+	padding-right: 0;
 }
 
 .header-Logo a:hover,
@@ -295,15 +291,19 @@ body {
 
 
 .customerRec-Cards {
-	width: 250px;
+	width: 255px;
 	margin-right: 30px;
 	box-shadow: 5px 5px 5px gainsboro;
+}
+
+.customerRec-Cards:last-child {
+	margin-right: 0;
 }
 
 .customerRec-Cards img {
 	display: block;
 	height: 256px;
-	width: 250px;
+	width: 255px;
 }
 
 .card-Content {
@@ -433,6 +433,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	font-size: 14px;
+	width: 174px;
 }
 
 
@@ -569,6 +570,10 @@ body {
 		height: 24px;
 		width: 24px;
 	}
+
+	.footer-Copyright-List{
+		width: 150px;
+	}
 }
 
 
@@ -597,11 +602,6 @@ body {
 		padding: 0;
 		padding-top :10px;
 	}
-
-	.header-Logo {
-		height: 50px;
-		line-height: 500px;
-	}
 	
 	.header-Logo a {
 		width: 48px;
@@ -626,7 +626,6 @@ body {
 		border: 1px solid #fff;
 		border-bottom:none;
 	}
-
 
 	.banner-Text {
 		font-size: 16px;

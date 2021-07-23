@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+
+/*CSS 樣式重置*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: "Roboto", source-han-sans-traditional, "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei" , "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.5;
+
+}
+
+*,*::before,*::after{
+	box-sizing: border-box;
+  }
+
+/* font-family: 'Noto Sans TC', sans-serif; */
+/* font-family: source-han-sans-traditional, sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-weight: 400; Regular */
+/* font-weight: 500; Medium */
+/* font-weight: 700; Bold */
+/* font-weight: 900; Black */
+
+.subTitle {
+	padding-top: 60px;
+	text-align: center;
+	font-weight: 700;
+	color: #650300;
+	font-size: 48px;
+}
+
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+.header, .footer {
+	background: #AA0601;
+	justify-content: space-between;
+}
+
+.header {
+	display: flex;
+	padding :30px 88px;
+}
+
+
+.header-Logo a {
+	display: block;
+	background: url(../images/logo.png) no-repeat;
+	background-size: contain;
+	width: 80px;
+	height: 48px;
+	text-indent: 100%; 
+	white-space: nowrap; 
+	overflow: hidden;
+}
+
+.header-Menu {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+.header-Menu li {
+	padding-right: 64px;
+}
+
+.header-Menu li:last-child {
+	padding-right: 0;
+}
+
+.header-Menu a,
+.footer-Link-Menu a,
+.footer-Contact a,
+.footer-Copyright-List a{
+	color: #fff;
+}
+
+.header-Logo a:hover,
+.header-Menu a:hover,
+.footer-Link-Menu a:hover,
+.footer-Contact a:hover,
+.footer-Copyright-List a:hover,
+.footer-Link-Social a:hover {
+	-webkit-filter:brightness(.8);
+	transition: .3s;
+}
+
+/*以下內容區*/
+
+
+.location h2 {
+	font-size: 48px;
+	font-weight: 700;
+	padding-left: 16px;
+	margin-top: 96px;
+	margin-bottom: 60px;
+	border-left: 4px solid #9C2015;
+}
+
+.location-Selector select {
+	font-size: 18px;
+	width: 324px;
+	height: 45px;
+	padding-left: 16px;
+}
+
+.location-Selector label {
+	padding-right: 20px;
+	font-size: 24px;
+}
+
+.store-Information {
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 160px;
+}
+
+.store-Card {
+	font-size: 20px;
+	width: 445px;
+	margin-right: 30px;
+	border: 1px solid #00000021;
+}
+
+.store-Card h3 {
+	font-size: 24px;
+	font-weight: 500;
+	padding: 12px 24px;
+	border-bottom: 1px solid #00000021;
+}
+
+.store-Card-Image {
+	width: 445px;
+	height: 224px;
+}
+
+.store-Card-Content {
+	padding: 16px 0px;
+}
+
+.store-Card-Content img{
+	padding-right: 10px;
+}
+
+.store-Card-Content li{
+	display: flex;
+	align-items: flex-start;
+	margin: 0 !important;
+	border: none;
+	padding: 8px 16px;
+}
+
+.store-Card-Content li:last-child {
+	padding-bottom: 0;
+}
+
+.store-Map {
+	width: 635px;
+}
+
+/*以上內容區*/
+
+.footer-Link {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 32px;
+	padding-bottom: 24px;
+}
+
+.footer-Link-Menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 464px;
+}
+
+.footer-Link-Social {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 208px;
+}
+
+.footer-Contact {
+	padding-bottom: 24px;
+	border-bottom: 1px solid #fff;
+	font-size: 36px;
+}
+
+.footer-Contact li{
+	display: flex;
+	align-items: center;
+}
+
+.footer-Contact :nth-child(1) {
+	padding-bottom: 22px;
+}
+
+.footer-Contact img{
+	padding-right: 22px;
+}
+
+.footer-Copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 32px;
+	padding-bottom: 39px;
+}
+
+.footer-Copyright h4 {
+	color: #fff;
+}
+
+.footer-Copyright-List {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	width: 174px;
+}
+
+
+@media (max-width: 992px) {
+	.container {
+		width: 690px;
+	}
+
+	.subTitle {
+		padding-top: 40px;
+		font-size: 32px;
+	}
+
+	.header-Menu li {
+		padding-right: 40px;
+	}	
+
+	/*以下內容區*/
+
+	.location h2 {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+	.location-Selector label {
+		font-size: 16px;
+	}
+
+	.location-Selector select {
+		font-size: 16px;
+		width: 35%;
+	}
+
+	.store-Information {
+		flex-direction: column;
+		padding-top: 24px;
+		padding-bottom: 96px;
+	}
+
+	.store-Card-Image {
+		width: 330px;
+	}
+	
+	.store-Card {
+		display: flex;
+		padding-bottom: 32px;
+		align-items: center;
+		font-size: 14px;
+		width: 100%;
+		border: none;
+	}
+	
+	.store-Card h3 {
+		font-size: 16px;
+	}
+
+	.store-Card-Intro{
+		width: 330px;
+		margin-left: 30px;
+		border: 1px solid #00000021;
+	}
+	
+	.store-Map {
+		width: 690px;
+		height: 422px;
+	}
+	
+
+	/*以上內容區*/
+
+	.footer-Contact {
+		font-size: 20px;
+	}
+
+	.footer-Contact :nth-child(1) {
+		padding-bottom: 12px;
+	}
+	
+	.footer-Contact img{
+		padding-right: 8px;
+	}
+	
+	.footer-Link-Social {
+		flex-basis: 136px;
+	}
+
+	.footer-Link-Social img {
+		height: 24px;
+		width: 24px;
+	}
+
+	.footer-Copyright-List{
+		width: 150px;
+	}
+}
+
+
+@media (max-width: 767px) {
+
+	.container {
+		width: 345px;
+	}
+
+	.subTitle {
+		padding-top: 30px;
+		font-size: 20px;
+	}
+
+	.header {
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid #fff;
+		padding: 0;
+		padding-top :10px;
+	}
+	
+	.header-Logo a {
+		width: 48px;
+		height: 50px;
+	}
+	
+	.header-Menu {
+		flex-wrap: wrap;
+		text-align: center;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.header-Menu li a  {
+		display: block;
+	}
+
+	.header-Menu li {
+		padding: 8px 0px;
+		height: 45px;
+		width: 50%;
+		border: 1px solid #fff;
+		border-bottom:none;
+	}
+
+	/*以下為內容區*/
+
+	.location h2 {
+		margin-top: 28px;
+		margin-bottom: 24px;
+		font-size: 28px;
+	}
+
+	.location-Selector label {
+		font-size: 14px;
+		padding-right: 12px;
+	}
+	
+	.location-Selector select {
+		font-size: 14px;
+		width: 78%;
+	}
+	
+	.store-Information {
+		flex-direction: column;
+		padding-top: 20px;
+		padding-bottom: 56px;
+	}
+
+	.store-Card-Image {
+		width: 345px;
+		display: block;
+	}
+
+	.store-Card {
+		display: block;
+		padding-bottom: 16px;
+		font-size: 14px;
+		width: 345px;
+	}
+
+	.store-Card-Intro {
+		width: 345px;
+		margin: 0;
+	}
+
+	.store-Card li {
+		margin-top: 16px;
+		margin-right: 0;
+	}
+	
+	.store-Map {
+		width: 345px;
+		height: 211px;
+	}
+
+	/*以上為內容區*/
+
+	.footer-Link {
+		flex-direction: column;
+		padding-top: 24px;
+		padding-bottom: 0;
+	}
+	.footer-Contact {
+		font-size: 16px;
+	}
+
+	.footer-Contact :nth-child(1) {
+		padding-bottom: 6px;
+	}
+	
+	.footer-Link-Menu{
+		display: none;
+	}
+
+	.footer-Link-Social{
+		flex-basis: 24px;
+		justify-content: flex-end;
+		position: absolute;
+		right: 24px;
+	}
+
+	.footer-Link-Social li{
+		padding-right: 24px;
+	}
+
+	.footer-Copyright {
+		flex-direction: column;
+		padding-top: 16px;
+		padding-bottom: 24px;
+	}
+
+	.footer-Contact img {
+		width: 24px;
+		height: 24px;
+	}
+
+	.footer-Copyright-List {
+		flex-direction: column;
+	}
+	
+	.footer-Copyright-List li {
+		padding-top: 8px;
+	}
+
+}
